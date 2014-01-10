@@ -1,0 +1,16 @@
+// Buttons
+
+.button {
+	color: $type-white;
+	background-color: $black;
+	padding: $spacing-s;
+	text-transform: uppercase;
+	border: none;
+	margin: 0;
+
+	&:hover, &:focus {
+		text-decoration: none;
+		background-color: $grey;
+		cursor: pointer;
+	}
+}

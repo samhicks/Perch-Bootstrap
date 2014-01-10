@@ -1,0 +1,62 @@
+// Forms
+
+::-webkit-input-placeholder  { 
+	color: $type-black; 
+	text-transform: uppercase;
+}
+
+input:-moz-placeholder {
+	color: $type-black; 
+	text-transform: uppercase;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+	border: 1px solid $grey;
+	-moz-box-shadow: 	none;
+	-webkit-box-shadow: none;
+	box-shadow: 		none;
+	padding: $spacing-xs;
+	background-color: $white;
+	font-style: normal;
+	width: 96%;
+	margin: 0;
+
+	&:focus {
+		outline: none;
+		background-color: $light-grey;
+	}
+}
+
+input[type="checkbox"] {
+	margin: 0 $spacing-xs 0 0;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 200px;
+}
+
+.field {
+	margin-bottom: $spacing-m;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: $spacing-xs;
+
+	.required {
+	}
+
+	.error {
+	}
+}
+
+select {
+	max-width: 100%
+}
+
+legend {
+	width: 100%;
+	margin-bottom: $spacing-xs;
+}

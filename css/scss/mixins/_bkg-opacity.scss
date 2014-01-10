@@ -1,0 +1,8 @@
+// Background opacity
+
+@mixin bkg-opacity($r-value, $g-value, $b-value, $opacity) { 
+	background: rgb($r-value, $g-value, $b-value); // Fallback for web browsers that doesn't support RGBa
+	background: rgba($r-value, $g-value, $b-value, $opacity); // RGBa with opacity ie. 0, 0, 0, 0.6
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,     endColorstr=#ffffff)"; // For IE 8
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled='false');
+}

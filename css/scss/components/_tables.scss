@@ -1,0 +1,36 @@
+// Tables
+
+table {
+	border-top: 1px solid $grey;
+	border-left: 1px solid $grey;
+	width: 100%;
+	text-align: left;
+
+	thead {
+		border-bottom: 1px solid $grey;
+		background-color: $light-grey;
+
+		th {
+			text-align: left;
+			font-weight: bold;
+			padding: $spacing-xs $spacing-s;
+			border-right: 1px solid $grey;
+		}
+	}
+
+	tbody {
+		th, td {
+			border-right: 1px solid $grey;
+			padding: $spacing-s;
+			border-bottom: 1px solid $grey;
+		}
+	}
+
+	tfoot {
+		th, td {
+			border-right: 1px solid $grey;
+			padding: $spacing-s;
+			border-bottom: 1px solid $grey;
+		}
+	}
+}

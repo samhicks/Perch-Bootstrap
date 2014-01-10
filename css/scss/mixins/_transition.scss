@@ -1,0 +1,7 @@
+// Transition
+
+@mixin transition ($property, $duration, $timing-function) {
+    -webkit-transition: $property $duration $timing-function; // safari 3.1–5.0
+       -moz-transition: $property $duration $timing-function; // firefox 2+
+            transition: $property $duration $timing-function; // w3c standard
+}

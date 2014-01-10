@@ -1,0 +1,15 @@
+// Clearfix
+
+.clearfix {
+    zoom: 1; 
+
+    &:before, &:after {
+	    zoom: 1;
+	    display: table;
+	    content: '';
+	}  
+
+	&:after {
+	    clear: both;
+	} 
+}

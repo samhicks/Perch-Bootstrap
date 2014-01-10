@@ -1,0 +1,7 @@
+// Box sizing
+
+@mixin box-sizing ($box-sizing) {
+    -webkit-box-sizing: $box-sizing; // safari 3.1–5.0
+       -moz-box-sizing: $box-sizing; // firefox 2+
+            box-sizing: $box-sizing; // w3c standard
+}

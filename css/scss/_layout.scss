@@ -1,0 +1,100 @@
+// Layout
+
+.grid {
+	max-width: $max-page-width;
+	margin: 0 auto;
+	@include box-sizing(border-box);
+	@extend .clearfix;
+
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, 
+    .col-8, .col-9, .col-10, .col-11, .col-12 {
+		@include box-sizing(border-box);
+		float: left;
+		padding: 0 $spacing-l;
+	}
+
+	.col-1 {
+		width: 8.333%;
+	}
+
+	.col-2 {
+        width: 16.666%
+    }
+
+    .col-3 {
+        width: 24.999%
+    }
+
+    .col-4 {
+        width: 33.332%
+    }
+
+    .col-5 {
+        width: 41.665%
+    }
+
+    .col-6 {
+        width: 49.998%
+    }
+
+    .col-7 {
+        width: 58.331%
+    }
+
+    .col-8 {
+        width: 66.664%
+    }
+
+    .col-9 {
+        width: 74.997%
+    }
+
+    .col-10 {
+        width: 83.333%
+    }
+
+    .col-11 {
+        width: 91.666%
+    }
+
+    .col-12 {
+        width: 100%
+    }
+}
+
+.pad {
+	padding: $spacing-m $spacing-l !important;
+}
+
+.small-pad {
+	padding: $spacing-s $spacing-l;
+}
+
+.no-pad {
+	padding: 0 !important;
+}
+
+/* Mobile and Tablet */
+@media (max-width: $break-tablet-portrait) {
+
+	.grid {
+
+		.col-tablet-12 {
+	    	width: 100%;
+	    }
+
+	    .col-tablet-6 {
+	    	width: 50%;
+	    }
+	}
+}
+
+@media (max-width: $break-mobile-landscape) {
+
+	.grid {
+
+		.col-mobile-6 {
+			width: 100%;
+		}
+	}
+}

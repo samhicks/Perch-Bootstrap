@@ -1,0 +1,121 @@
+// Typography
+
+/* Google web fonts */
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic);
+
+/* Basic */
+p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+dd, dt, dl, ol, ul, hr, pre, table {
+	margin-bottom: $spacing-m;
+}
+
+figure {
+	margin: 0;
+}
+
+blockquote {
+	margin-bottom: $spacing-xs;
+
+	p {
+		margin: 0;
+	}
+}
+
+hr {
+	border-width: 3px 0 0;
+	border-color: $black;
+}
+
+/* Headings */ 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, dt, blockquote, figcaption {
+	font-family: $heading-font;
+}
+
+h1, .h1 {
+	@include rem(font-size, $heading-primary-font-size);
+	@include rem(line-height, $heading-primary-line-height);
+}
+
+h2, .h2 {
+	@include rem(font-size, $heading-secondary-font-size);
+	@include rem(line-height, $heading-secondary-line-height);
+}
+
+h3, .h3 {
+	@include rem(font-size, $heading-tertiary-font-size);
+	@include rem(line-height, $heading-tertiary-line-height);
+}
+
+h4, .h4 {
+	@include rem(font-size, $body-font-size);
+	@include rem(line-height, $body-line-height);
+}
+
+h5, .h5 {
+	font-weight: bold;
+}
+
+h6, .h6 {
+	font-weight: bold;
+}
+
+/* Body */
+small, caption {
+}
+
+figure.blockquote {
+
+	blockquote {
+		@include rem(font-size, $heading-secondary-font-size);
+		@include rem(line-height, $heading-secondary-line-height);
+	}
+
+	figcaption {
+		@include rem(font-size, $heading-tertiary-font-size);
+		@include rem(line-height, $heading-tertiary-line-height);
+	}
+}
+
+b {
+	font-weight: bold;
+}
+
+/* Links */
+a {
+	text-decoration: underline;
+
+	&:hover, &:focus {
+	}
+}
+
+/* Lists */
+dt {
+	@include rem(font-size, $heading-tertiary-font-size);
+	@include rem(line-height, $heading-tertiary-line-height);
+}
+
+ul {
+	list-style: square;
+	padding-left: 18px;
+}
+
+/* CMS Content Regions */
+.wysiwyg {
+
+	ul {
+
+		li {
+			margin-bottom: $spacing-m;
+		}
+	}
+
+	ol {
+		list-style: decimal;
+		padding-left: 18px;
+
+		li {
+			margin-bottom: $spacing-m;
+		}
+	}
+}

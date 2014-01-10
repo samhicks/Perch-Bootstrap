@@ -1,0 +1,41 @@
+// Variables
+
+// Colors
+$white: #fff;
+$black: #000;
+$grey: #ccc;
+$light-grey: #eee;
+
+// Type colors
+$type-white: #fff;
+$type-black: #000;
+
+// Typography
+$body-font-size: 16px; 
+$body-line-height: 23px;
+
+$heading-primary-font-size: 37px; 
+$heading-primary-line-height: 45px;
+
+$heading-secondary-font-size: 26px; 
+$heading-secondary-line-height: 35px;
+
+$heading-tertiary-font-size: 23px;
+$heading-tertiary-line-height: 32px;
+
+$heading-font: "EB Garamond", serif;
+$body-font: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Margin
+$spacing-l: 46px;
+$spacing-m: $body-line-height;
+$spacing-s: 14px;
+$spacing-xs: 7px;
+
+// Break Points
+$break-tablet-landscape: 1000px;
+$break-tablet-portrait: 768px;
+$break-mobile-landscape: 480px;
+
+// Page Width
+$max-page-width: 1200px;

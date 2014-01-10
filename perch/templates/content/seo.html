@@ -1,0 +1,18 @@
+<perch:if exists="description">
+<meta name="description" content="<perch:content id="description" type="textarea" label="Page Description" help="This will show in search engine results and should be up to 160 characters max" />"/>
+</perch:if>
+
+<perch:if exists="keywords">
+<meta name="keywords" content="<perch:content id="keywords" type="textarea" label="Keywords" help="Words and phrases separated with comma" />"/>
+</perch:if>
+
+<perch:if exists="author">
+<meta name="author" content="<perch:content id="author" type="text" label="Author" />"/>
+</perch:if>
+
+<perch:if exists="no-robots">
+<perch:content id="no-robots" type="checkbox" label="Robots : Don't include Robot Meta" help="Check this box if you do not wish to include robot meta, otherwise select from the list below" suppress="true"/>
+
+<perch:else />
+<meta name="robots" content="<perch:content id="robots1" type="checkbox" label="All" value="all," /><perch:content id="robots2" type="checkbox" label="None" value="none," /><perch:content id="robots3" type="checkbox" label="Index" value="index," /><perch:content id="robots4" type="checkbox" label="No index" value="noindex," /><perch:content id="robots5" type="checkbox" label="Follow" value="follow," /><perch:content id="robots6" type="checkbox" label="No follow" value="nofollow," /><perch:content id="robots7" type="checkbox" label="No image index" value="noimageindex," /><perch:content id="robots8" type="checkbox" label="No image click" value="noimageclick," />" />
+</perch:if>
