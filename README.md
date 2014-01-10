@@ -24,6 +24,8 @@ npm install -g grunt-cli
 grunt
 ```
 
+Don't forget to install the [browser plugin][livereload] to get LiveReload working. Click the LiveReload icon in your browser to activate it.
+
 Other than that you just need to purchase a [Perch licence][perch], download the latest version of the CMS and follow [these instructions][perchsetup] to get it working locally.
 
 @copyright [Sam Hicks][samhicks] 2014
@@ -32,3 +34,4 @@ Other than that you just need to purchase a [Perch licence][perch], download the
 [grunt]: http://24ways.org/2013/grunt-is-not-weird-and-hard/
 [perch]: http://grabaperch.com/
 [perchsetup]: http://docs.grabaperch.com/docs/installing-perch/
+[livereload]: http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-
