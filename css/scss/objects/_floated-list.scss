@@ -2,9 +2,7 @@
 
 .floated-list {
 	@extend .clearfix;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	@extend .secret-list;
 
 	> li {
 		float: left;

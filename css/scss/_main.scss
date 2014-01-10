@@ -6,10 +6,8 @@ html {
 	color: $type-black;
 	-webkit-text-size-adjust:100%; 
 	-ms-text-size-adjust:100%;
-	background: $white;
 }
 
 body {
 	@include rem(line-height,$body-line-height);
-	background: $white;
 }

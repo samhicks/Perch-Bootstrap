@@ -64,7 +64,7 @@ h6, .h6 {
 small, caption {
 }
 
-figure.blockquote {
+figure, .blockquote {
 
 	blockquote {
 		@include rem(font-size, $heading-secondary-font-size);
@@ -72,8 +72,6 @@ figure.blockquote {
 	}
 
 	figcaption {
-		@include rem(font-size, $heading-tertiary-font-size);
-		@include rem(line-height, $heading-tertiary-line-height);
 	}
 }
 
